@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Build Your Pizza</h1>
+        
+        <div class="pizza-builder">
+            <div class="pizza">
+                <div class="quadrant top-left" id="topLeft"></div>
+                <div class="quadrant top-right" id="topRight"></div>
+                <div class="quadrant bottom-left" id="bottomLeft"></div>
+                <div class="quadrant bottom-right" id="bottomRight"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="toppings">
+                <h3>Select Toppings for Each Quarter</h3>
+                
+                <div class="section" id="topleft">
+                    <h4>Top Left Quarter ($2)</h4>
+                    <input type="radio" name="topleft" value="pepperoni"> Pepperoni
+                    <input type="radio" name="topleft" value="sausage"> Sausage
+                    <input type="radio" name="topleft" value="mushroom"> Mushroom
+                    <input type="radio" name="topleft" value="bacon"> Bacon
+                    <input type="radio" name="topleft" value="anchovies"> Anchovies
+                </div>
+
+                <div class="section" id="topright">
+                    <h4>Top Right Quarter ($2)</h4>
+                    <input type="radio" name="topright" value="ham"> Ham
+                    <input type="radio" name="topright" value="cheese"> Cheese
+                    <input type="radio" name="topright" value="spinach"> Spinach
+                    <input type="radio" name="topright" value="olives"> Olives
+                    <input type="radio" name="topright" value="onions"> Onions
+                </div>
+
+                <div class="section" id="bottomleft">
+                    <h4>Bottom Left Quarter ($2)</h4>
+                    <input type="radio" name="bottomleft" value="chicken"> Chicken
+                    <input type="radio" name="bottomleft" value="meatballs"> Meatballs
+                    <input type="radio" name="bottomleft" value="garlic"> Garlic
+                    <input type="radio" name="bottomleft" value="pineapple"> Pineapple
+                    <input type="radio" name="bottomleft" value="jalapenos"> Jalapeños
+                </div>
+
+                <div class="section" id="bottomright">
+                    <h4>Bottom Right Quarter ($2)</h4>
+                    <input type="radio" name="bottomright" value="tomatoes"> Tomatoes
+                    <input type="radio" name="bottomright" value="artichokes"> Artichokes
+                    <input type="radio" name="bottomright" value="broccoli"> Broccoli
+                    <input type="radio" name="bottomright" value="bellPeppers"> Bell Peppers
+                    <input type="radio" name="bottomright" value="corn"> Corn
+                </div>
+            </div>
+
+            <div class="size-selection" >
+                <h3>Select Size</h3>
+                <select id="pizzaSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extraLarge">Extra Large</option>
+                </select>
+            </div>
+
+            <button class="order-btn">Order Pizza</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
